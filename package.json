@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-clocks",
+  "version": "1.0.0",
+  "description": "Clocks experiment for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Godson",
+  "license": "ISC"
+}

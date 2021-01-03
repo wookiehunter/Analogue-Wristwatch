@@ -1,0 +1,98 @@
+/* Layout */
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(watch-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.clockbox {
+    position: absolute;
+    transform: translate(-8px, -8px);
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: rgba(231, 134, 7, 0.603);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: rgba(248, 10, 216, 0.281);
+}
+.hour-marks {
+    fill: none;
+    stroke: green;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: red;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: rgb(10, 71, 238);
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: rgba(234, 238, 6, 0.719);
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+#Swatch {
+    position: absolute;
+    transform: translateY(50px);
+    font-size: 3em;
+    font-family: monospace;
+}
+
+#S1, #S4 {
+    color: red;
+}
+
+#S2, #S5 {
+    color: blue;
+}
+
+#S3, #S6 {
+    color:darkorange;
+}
+
+#S7 {
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    max-width: 16px;
+    max-height: 16px;
+}
